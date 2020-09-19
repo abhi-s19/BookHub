@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/ContentFav11"
+        android:weightSum="6">
+
+        <ImageView
+            android:id="@+id/imgFavBookImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:background="@color/colorAccent"
+            android:padding="5dp"
+            android:src="@drawable/default_book_cover" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/txtFavBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Hello World"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFavBookAuthor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFavBookName"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="Android Inc."
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtFavBookPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFavBookAuthor"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:text="RS. 499"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtFavBookRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtFavBookPrice"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_rating"
+                android:drawablePadding="5dp"
+                android:text="4.5"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
